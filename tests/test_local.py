@@ -15,6 +15,7 @@ class Document(HTMLParser):
     def __init__(self):
         super().__init__(convert_charrefs=True)
         self.references = []
+        self.elements = []
         self.ids = []
         self.headings = 0
         self.lang = None
@@ -22,6 +23,7 @@ class Document(HTMLParser):
 
     def handle_starttag(self, tag, attrs):
         attrs = dict(attrs)
+        self.elements.append((tag, attrs))
         if tag == 'html':
             self.lang = attrs.get('lang')
         if tag == 'h1':
@@ -81,6 +83,25 @@ class StaticSiteTests(unittest.TestCase):
             with self.subTest(url=url):
                 self.assertFalse(urlsplit(url).scheme, 'Ressource CSS distante')
                 self.assertTrue((ROOT / unquote(urlsplit(url).path)).is_file(), 'Ressource CSS absente')
+
+    def test_home_navigation_and_carousel_controls(self):
+        home = DOCUMENTS[(ROOT / 'index.html').resolve()]
+        self.assertTrue(any(tag == 'nav' and attrs.get('aria-label') == 'Votre besoin'
+                            for tag, attrs in home.elements))
+        tracks = {attrs.get('id') for _, attrs in home.elements if 'data-carousel' in attrs}
+        self.assertEqual(tracks, {'community-carousel', 'services-carousel'})
+        for track in tracks:
+            for direction in ('prev', 'next'):
+                buttons = [attrs for tag, attrs in home.elements
+                           if tag == 'button' and f'data-carousel-{direction}' in attrs
+                           and attrs.get('aria-controls') == track]
+                with self.subTest(track=track, direction=direction):
+                    self.assertEqual(len(buttons), 1)
+                    self.assertIn('disabled', buttons[0], 'Le repli sans JavaScript doit rester sûr')
+                    self.assertTrue(buttons[0].get('aria-label'))
+        stars = [attrs for tag, attrs in home.elements
+                 if tag == 'use' and attrs.get('href') == '#i-rating-star']
+        self.assertEqual(len(stars), 15, 'Les étoiles doivent rester visibles sans police système')
 
     def test_generated_pages_are_up_to_date(self):
         generated = [ROOT / name for name in ('agences.html', 'catalogue.html', 'contact.html', 'devis.html', 'espace-client.html')]
