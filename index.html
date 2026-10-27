@@ -13,7 +13,8 @@
   <script src="script.js" defer></script>
 </head>
 <body id="top">
-  <a class="skip-link" href="#contenu">Aller au contenu</a>
+  <nav aria-label="Accès direct"><a class="skip-link" href="#contenu">Aller au contenu</a></nav>
+  <aside class="demo-banner" aria-label="À propos de la démonstration"><div class="wrap"><strong>Démo locale non officielle</strong><span> — aucun devis ni service réel.</span> <a href="pages/mentions-legales.html">En savoir plus</a></div></aside>
   <svg class="icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
     <symbol id="i-chevron-down" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
     <symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M4 12h15M13 6l6 6-6 6"/></symbol>
@@ -43,13 +44,13 @@
         <img src="assets/allianz-logo.svg" alt="Allianz" width="140" height="35">
       </a>
       <nav class="audience-nav" aria-label="Choisir votre espace">
-        <a href="https://www.allianz.fr/">Particuliers</a>
-        <a class="is-current" href="./" aria-current="page">Professionnels - Entreprises</a>
-        <a href="https://www.allianz.fr/qui-est-allianz.html">Découvrir Allianz</a>
+        <a href="pages/particuliers.html">Particuliers</a>
+        <a class="is-current" href="./" aria-current="page">Professionnels</a>
+        <a href="pages/allianz.html">Allianz en France</a>
       </nav>
       <div class="header-actions">
-        <a class="header-action agency-action" href="https://agences.allianz.fr/"><svg class="icon"><use href="#i-pin"/></svg><span>Trouver une agence</span></a>
-        <a class="header-action client-action" href="https://www.allianz.fr/assurances-professionnels-entreprises/mon-espace-client.html"><svg class="icon"><use href="#i-user"/></svg><span>Mon espace client</span></a>
+        <a class="header-action agency-action" href="agences.html"><svg class="icon"><use href="#i-pin"/></svg><span>Trouver une agence</span></a>
+        <a class="header-action client-action" href="espace-client.html"><svg class="icon"><use href="#i-user"/></svg><span>Mon espace client</span></a>
       </div>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navigation-principale" aria-label="Ouvrir le menu">
         <svg class="icon menu-open-icon"><use href="#i-menu"/></svg><svg class="icon menu-close-icon"><use href="#i-close"/></svg><span>Menu</span>
@@ -61,32 +62,32 @@
           <details class="nav-dropdown">
             <summary>Nos assurances <svg class="icon"><use href="#i-chevron-down"/></svg></summary>
             <div class="nav-panel">
-              <a href="https://www.allianz.fr/assurances-professionnels-entreprises/toutes-nos-solutions.html">Toutes nos assurances</a>
-              <a href="https://www.allianz.fr/assurances-professionnels-entreprises/mon-activite.html">Assurer mon activité</a>
-              <a href="https://www.allianz.fr/assurances-professionnels-entreprises/ma-protection.html">Me protéger en tant que dirigeant</a>
-              <a href="https://www.allianz.fr/assurances-professionnels-entreprises/la-protection-de-mes-salaries.html">Protéger mes salariés</a>
+              <a href="catalogue.html">Toutes nos assurances</a>
+              <a href="pages/activite.html">Assurer mon activité</a>
+              <a href="pages/dirigeant.html">Me protéger en tant que dirigeant</a>
+              <a href="pages/salaries.html">Protéger mes salariés</a>
             </div>
           </details>
           <details class="nav-dropdown">
             <summary>Nos services <svg class="icon"><use href="#i-chevron-down"/></svg></summary>
             <div class="nav-panel">
-              <a href="https://www.allianz.fr/assurances-professionnels-entreprises/mon-espace-client.html">Mon espace client</a>
-              <a href="https://www.allianz.fr/assurances-professionnels-entreprises/mon-activite/portail-services-professionnels.html">Portail de services professionnels</a>
-              <a href="https://www.allianz.fr/assurances-professionnels-entreprises/infos-contact-professionnels.html">Nous contacter</a>
+              <a href="espace-client.html">Mon espace client</a>
+              <a href="pages/services.html">Portail de services professionnels</a>
+              <a href="contact.html">Nous contacter</a>
             </div>
           </details>
-          <a class="nav-link" href="https://www.allianz.fr/assurances-professionnels-entreprises/infos-contact-professionnels.html">Assistance et sinistres</a>
+          <a class="nav-link" href="contact.html">Assistance et sinistres</a>
           <a class="nav-link" href="#questions">Vos questions</a>
         </nav>
         <div class="nav-actions">
-          <a class="search-link" href="https://www.allianz.fr/assurances-professionnels-entreprises/toutes-nos-solutions.html" aria-label="Rechercher une assurance"><svg class="icon"><use href="#i-search"/></svg></a>
-          <a class="button button-small" href="https://www.allianz.fr/tarif-professionnels">Demander un devis <svg class="icon"><use href="#i-arrow-right"/></svg></a>
+          <a class="search-link" href="catalogue.html" aria-label="Rechercher une assurance"><svg class="icon"><use href="#i-search"/></svg></a>
+          <a class="button button-small" href="devis.html">Demander un devis <svg class="icon"><use href="#i-arrow-right"/></svg></a>
         </div>
         <div class="mobile-audience">
-          <a href="https://www.allianz.fr/">Particuliers</a>
-          <a href="https://www.allianz.fr/qui-est-allianz.html">Découvrir Allianz</a>
-          <a href="https://agences.allianz.fr/">Trouver une agence</a>
-          <a href="https://www.allianz.fr/assurances-professionnels-entreprises/mon-espace-client.html">Mon espace client</a>
+          <a href="pages/particuliers.html">Particuliers</a>
+          <a href="pages/allianz.html">Allianz en France</a>
+          <a href="agences.html">Trouver une agence</a>
+          <a href="espace-client.html">Mon espace client</a>
         </div>
       </div>
     </div>
@@ -95,12 +96,10 @@
   <main id="contenu">
     <section class="hero" aria-labelledby="hero-title">
       <div class="wrap hero-inner">
-        <p class="eyebrow hero-eyebrow"><span></span> À vos côtés au quotidien</p>
-        <h1 id="hero-title">Assurance<br> professionnelle</h1>
-        <p class="hero-copy">En ce moment, <strong>jusqu’à 3 mois gratuits<sup>*</sup></strong><br> sur votre assurance multirisque professionnelle</p>
+        <h1 id="hero-title">Assurance professionnelle</h1>
+        <p class="hero-copy">En ce moment, <strong>jusqu’à 3 mois gratuits<sup>*</sup></strong> sur votre assurance multirisque professionnelle<br><a class="hero-conditions" href="#promo">Voir les conditions de l’offre</a></p>
         <div class="hero-actions">
-          <a class="button button-hero" href="https://www.allianz.fr/tarif-professionnels?product=ACT5">Obtenir un devis Multirisque Pro <svg class="icon"><use href="#i-arrow-right"/></svg></a>
-          <a class="hero-conditions" href="#promo">Voir les conditions de l’offre <svg class="icon"><use href="#i-arrow-right"/></svg></a>
+          <a class="button button-hero" href="devis.html?product=ACT5">Obtenir un devis Multirisque Pro <svg class="icon"><use href="#i-arrow-right"/></svg></a>
         </div>
       </div>
     </section>
@@ -108,10 +107,10 @@
     <div class="quick-wrap wrap">
       <nav class="quick-links" aria-label="Accès rapides">
         <div class="quick-heading"><span>Votre besoin</span><strong>Comment pouvons-nous<br>vous aider ?</strong></div>
-        <a href="https://www.allianz.fr/assurances-professionnels-entreprises/toutes-nos-solutions.html"><span class="quick-icon"><svg class="icon"><use href="#i-search"/></svg></span><span>Rechercher<br>une assurance</span><svg class="icon quick-arrow"><use href="#i-arrow-right"/></svg></a>
-        <a href="https://www.allianz.fr/assurances-professionnels-entreprises/mon-espace-client.html"><span class="quick-icon"><svg class="icon"><use href="#i-user"/></svg></span><span>Mes services<br>clients</span><svg class="icon quick-arrow"><use href="#i-arrow-right"/></svg></a>
-        <a href="https://www.allianz.fr/assurances-professionnels-entreprises/infos-contact-professionnels.html"><span class="quick-icon"><svg class="icon"><use href="#i-message"/></svg></span><span>Nous<br>contacter</span><svg class="icon quick-arrow"><use href="#i-arrow-right"/></svg></a>
-        <a href="https://www.allianz.fr/assurances-professionnels-entreprises/devis-simulateurs-allianz.html"><span class="quick-icon"><svg class="icon"><use href="#i-file"/></svg></span><span>Faire<br>un devis</span><svg class="icon quick-arrow"><use href="#i-arrow-right"/></svg></a>
+        <a href="catalogue.html"><span class="quick-icon"><svg class="icon"><use href="#i-search"/></svg></span><span>Rechercher<br>une assurance</span><svg class="icon quick-arrow"><use href="#i-arrow-right"/></svg></a>
+        <a href="espace-client.html"><span class="quick-icon"><svg class="icon"><use href="#i-user"/></svg></span><span>Mes services<br>clients</span><svg class="icon quick-arrow"><use href="#i-arrow-right"/></svg></a>
+        <a href="contact.html"><span class="quick-icon"><svg class="icon"><use href="#i-message"/></svg></span><span>Nous<br>contacter</span><svg class="icon quick-arrow"><use href="#i-arrow-right"/></svg></a>
+        <a href="devis.html"><span class="quick-icon"><svg class="icon"><use href="#i-file"/></svg></span><span>Faire<br>un devis</span><svg class="icon quick-arrow"><use href="#i-arrow-right"/></svg></a>
       </nav>
     </div>
 
@@ -129,27 +128,27 @@
         <div class="section-heading centered">
           <p class="eyebrow blue-eyebrow"><span></span> Des solutions pour vous</p>
           <h2>Quel que soit votre secteur d’activité,<br class="desktop-break"> nous avons l’assurance professionnelle qu’il vous faut !</h2>
-          <p>À chaque métier ses besoins. Découvrez les solutions adaptées à votre activité.</p>
+
         </div>
         <div class="sector-grid">
-          <a class="sector-card" href="https://www.allianz.fr/assurances-professionnels-entreprises/metiers/commercants.html">
+          <a class="sector-card" href="pages/commercants.html">
             <div class="card-image"><img src="assets/commercants.jpg" alt="Une commerçante accueille une cliente dans sa boutique" loading="lazy"></div>
             <div class="sector-card-body"><h3>Commerçants</h3><p>Prêt à porter, caviste, librairie, fromagerie, luminaires, épicerie fine...</p><span class="text-link">Découvrir <svg class="icon"><use href="#i-arrow-right"/></svg></span></div>
           </a>
-          <a class="sector-card" href="https://www.allianz.fr/assurances-professionnels-entreprises/metiers/professionnels-du-droit-et-du-chiffre.html">
+          <a class="sector-card" href="pages/droit-chiffre.html">
             <div class="card-image"><img src="assets/droit.jpg" alt="Deux professionnels échangent autour de documents" loading="lazy"></div>
             <div class="sector-card-body"><h3>Professionnels du chiffre et du droit</h3><p>Avocat, notaire, huissier, expert-comptable...</p><span class="text-link">Découvrir <svg class="icon"><use href="#i-arrow-right"/></svg></span></div>
           </a>
-          <a class="sector-card" href="https://www.allianz.fr/assurances-professionnels-entreprises/metiers/professionnels-de-la-sante.html">
+          <a class="sector-card" href="pages/professions-sante.html">
             <div class="card-image"><img src="assets/sante.jpg" alt="Une professionnelle de santé échange avec une patiente" loading="lazy"></div>
             <div class="sector-card-body"><h3>Professionnels libéraux de la santé</h3><p>Médecin généraliste, pharmacien, pédiatre...</p><span class="text-link">Découvrir <svg class="icon"><use href="#i-arrow-right"/></svg></span></div>
           </a>
-          <a class="sector-card" href="https://www.allianz.fr/assurances-professionnels-entreprises/metiers.html">
+          <a class="sector-card" href="pages/metiers.html">
             <div class="card-image"><img src="assets/artisans.jpg" alt="Une artisane dans son atelier" loading="lazy"></div>
             <div class="sector-card-body"><h3>Nos solutions par métier</h3><p>Toutes nos solutions d’assurances pour les artisans, activités de conseil...</p><span class="text-link">Découvrir <svg class="icon"><use href="#i-arrow-right"/></svg></span></div>
           </a>
         </div>
-        <div class="center-action"><a class="button button-outline" href="https://www.allianz.fr/tarif-professionnels">Demander un devis assurance pro <svg class="icon"><use href="#i-arrow-right"/></svg></a></div>
+        <div class="center-action"><a class="button button-outline" href="devis.html">Demander un devis assurance pro <svg class="icon"><use href="#i-arrow-right"/></svg></a></div>
       </div>
     </section>
 
@@ -161,7 +160,7 @@
           <h2>Assurance de l’entreprise</h2>
           <p>Vous dirigez une entreprise industrielle ou commerciale ?</p>
           <p>Grande et moyenne entreprise, nos solutions s’adaptent à vos besoins.</p>
-          <a class="button" href="https://www.allianz.fr/assurances-professionnels-entreprises/secteurs.html">Nos solutions par secteur <svg class="icon"><use href="#i-arrow-right"/></svg></a>
+          <a class="button" href="pages/secteurs.html">Nos solutions par secteur <svg class="icon"><use href="#i-arrow-right"/></svg></a>
         </div>
       </div>
     </section>
@@ -171,27 +170,27 @@
         <div class="section-heading centered">
           <p class="eyebrow blue-eyebrow"><span></span> Nos assurances</p>
           <h2>Les assurances professionnelles<br class="desktop-break"> les plus recherchées</h2>
-          <p>Des garanties pour protéger votre activité, vos équipes et vous-même.</p>
+
         </div>
         <div class="product-grid">
-          <a class="product-card" href="https://www.allianz.fr/assurances-professionnels-entreprises/la-protection-de-mes-salaries/assurer-la-sante-de-mes-salaries.html"><span class="product-icon"><svg class="icon"><use href="#i-people"/></svg></span><span>Complémentaire santé collective</span><svg class="icon product-arrow"><use href="#i-arrow-right"/></svg></a>
-          <a class="product-card" href="https://www.allianz.fr/assurances-professionnels-entreprises/mon-activite/assurer-mon-entreprise.html"><span class="product-icon"><svg class="icon"><use href="#i-briefcase"/></svg></span><span>Assurance multirisque professionnelle</span><svg class="icon product-arrow"><use href="#i-arrow-right"/></svg></a>
-          <a class="product-card" href="https://www.allianz.fr/assurances-professionnels-entreprises/mon-activite/assurer-mes-responsabilites.html"><span class="product-icon"><svg class="icon"><use href="#i-shield"/></svg></span><span>Responsabilité civile professionnelle</span><svg class="icon product-arrow"><use href="#i-arrow-right"/></svg></a>
-          <a class="product-card" href="https://www.allianz.fr/assurances-professionnels-entreprises/ma-protection/proteger-ma-sante.html"><span class="product-icon"><svg class="icon"><use href="#i-heart"/></svg></span><span>Complémentaire santé individuelle</span><svg class="icon product-arrow"><use href="#i-arrow-right"/></svg></a>
-          <a class="product-card" href="https://www.allianz.fr/assurances-professionnels-entreprises/mon-activite/assurer-mes-biens/mes-locaux.html"><span class="product-icon"><svg class="icon"><use href="#i-building"/></svg></span><span>Assurance des locaux et des biens</span><svg class="icon product-arrow"><use href="#i-arrow-right"/></svg></a>
+          <a class="product-card" href="pages/sante-collective.html"><span class="product-icon"><svg class="icon"><use href="#i-people"/></svg></span><span>Complémentaire santé collective</span><svg class="icon product-arrow"><use href="#i-arrow-right"/></svg></a>
+          <a class="product-card" href="pages/multirisque.html"><span class="product-icon"><svg class="icon"><use href="#i-briefcase"/></svg></span><span>Assurance multirisque professionnelle</span><svg class="icon product-arrow"><use href="#i-arrow-right"/></svg></a>
+          <a class="product-card" href="pages/rc-pro.html"><span class="product-icon"><svg class="icon"><use href="#i-shield"/></svg></span><span>Responsabilité civile professionnelle</span><svg class="icon product-arrow"><use href="#i-arrow-right"/></svg></a>
+          <a class="product-card" href="pages/sante-individuelle.html"><span class="product-icon"><svg class="icon"><use href="#i-heart"/></svg></span><span>Complémentaire santé individuelle</span><svg class="icon product-arrow"><use href="#i-arrow-right"/></svg></a>
+          <a class="product-card" href="pages/locaux.html"><span class="product-icon"><svg class="icon"><use href="#i-building"/></svg></span><span>Assurance des locaux et des biens</span><svg class="icon product-arrow"><use href="#i-arrow-right"/></svg></a>
         </div>
-        <div class="center-action"><a class="button" href="https://www.allianz.fr/tarif-professionnels">Demander un devis <svg class="icon"><use href="#i-arrow-right"/></svg></a></div>
+        <div class="center-action"><a class="button" href="devis.html">Demander un devis <svg class="icon"><use href="#i-arrow-right"/></svg></a></div>
       </div>
     </section>
 
     <section class="section community section-soft" aria-labelledby="community-title">
       <div class="wrap">
-        <div class="section-heading community-heading"><div><p class="eyebrow blue-eyebrow"><span></span> Tous les projets comptent</p><h2 id="community-title">Une solution pour chaque activité</h2></div><p>Des assurances pensées pour les besoins spécifiques de votre structure.</p></div>
-        <div class="community-grid">
-          <a href="https://www.allianz.fr/assurances-professionnels-entreprises/startups.html"><span class="community-number">01</span><h3>Start-ups</h3><p>Développez votre activité en étant bien assuré.</p><span class="text-link">En savoir plus <svg class="icon"><use href="#i-arrow-right"/></svg></span></a>
-          <a href="https://www.allianz.fr/assurances-professionnels-entreprises/associations.html"><span class="community-number">02</span><h3>Associations</h3><p>Des solutions pour celles et ceux qui s’engagent.</p><span class="text-link">En savoir plus <svg class="icon"><use href="#i-arrow-right"/></svg></span></a>
-          <a href="https://www.allianz.fr/assurances-professionnels-entreprises/acteurs-du-sport.html"><span class="community-number">03</span><h3>Acteurs du sport</h3><p>Sportifs, clubs, fédérations et organisateurs.</p><span class="text-link">En savoir plus <svg class="icon"><use href="#i-arrow-right"/></svg></span></a>
-          <a href="https://www.allianz.fr/assurances-professionnels-entreprises/franchises-et-groupements.html"><span class="community-number">04</span><h3>Franchises &amp; groupements</h3><p>Une protection adaptée aux réseaux organisés.</p><span class="text-link">En savoir plus <svg class="icon"><use href="#i-arrow-right"/></svg></span></a>
+        <div class="section-heading community-heading"><div><p class="eyebrow blue-eyebrow"><span></span> Tous les projets comptent</p><h2 id="community-title">Une solution pour chaque activité</h2></div><div class="carousel-actions" aria-label="Faire défiler les secteurs"><button type="button" class="carousel-prev" data-carousel-prev aria-controls="community-carousel" aria-label="Secteur précédent" disabled><svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg></button><button type="button" data-carousel-next aria-controls="community-carousel" aria-label="Secteur suivant" disabled><svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg></button></div></div>
+        <div class="community-grid" id="community-carousel" data-carousel tabindex="0" aria-label="Solutions par activité, défilement horizontal">
+          <a href="pages/startups.html"><img src="assets/startups.jpg" alt="" loading="lazy"><div class="community-card-body"><h3>Start-ups</h3><p>Quelle que soit votre activité, votre start-up ne demande qu’à se développer tout en étant bien assurée.</p><span class="text-link">En savoir plus <svg class="icon"><use href="#i-arrow-right"/></svg></span></div></a>
+          <a href="pages/associations.html"><img src="assets/associations.jpg" alt="" loading="lazy"><div class="community-card-body"><h3>Associations</h3><p>Associations d’intérêt général, fédérations et organismes engagés : découvrez les sujets à examiner.</p><span class="text-link">En savoir plus <svg class="icon"><use href="#i-arrow-right"/></svg></span></div></a>
+          <a href="pages/sport.html"><img src="assets/sport.jpg" alt="" loading="lazy"><div class="community-card-body"><h3>Acteurs du sport</h3><p>Sportifs professionnels, clubs, fédérations et organisateurs d’événements sportifs.</p><span class="text-link">En savoir plus <svg class="icon"><use href="#i-arrow-right"/></svg></span></div></a>
+          <a href="pages/franchises.html"><img src="assets/franchises.jpg" alt="" loading="lazy"><div class="community-card-body"><h3>Franchises &amp; groupements</h3><p>Franchises, réseaux organisés, licences de marques, concessions et coopératives.</p><span class="text-link">En savoir plus <svg class="icon"><use href="#i-arrow-right"/></svg></span></div></a>
         </div>
       </div>
     </section>
@@ -209,7 +208,7 @@
 
     <section class="reviews section-soft">
       <div class="wrap reviews-grid">
-        <div><p class="eyebrow blue-eyebrow"><span></span> Votre confiance nous engage</p><h2>Nos clients témoignent leur confiance</h2><p>Les évaluations sont publiées par eKomi, une société indépendante qui garantit la transparence et l’authenticité des avis.</p><a class="text-link" href="https://www.ekomi.fr/avis-clients-allianz-france-assurances.html">Lire tous les commentaires <svg class="icon"><use href="#i-arrow-right"/></svg></a></div>
+        <div><p class="eyebrow blue-eyebrow"><span></span> Votre confiance nous engage</p><h2>Nos clients témoignent leur confiance</h2><p>Les évaluations sont publiées par eKomi, une société indépendante qui garantit la transparence et l’authenticité des avis.</p><a class="text-link" href="pages/avis.html">Voir les avis reproduits <svg class="icon"><use href="#i-arrow-right"/></svg></a></div>
         <div class="review-score"><div class="rating-stars" aria-label="4,8 sur 5">★★★★★</div><div><strong>4,8</strong><span> / 5</span></div><p>Note de satisfaction globale<br>des clients Allianz</p><small>Calculé à partir de 84 852 avis clients sur les 12 derniers mois. Données indicatives reprises de la page source.</small></div>
         <blockquote class="review-quote"><div class="rating-stars" aria-label="5 sur 5">★★★★★</div><p>« Mme *** est une professionnelle, très à l’écoute et de bons conseils. »</p><footer>Avis client du 25/10/2026</footer></blockquote>
       </div>
@@ -219,50 +218,50 @@
       <div class="wrap">
         <div class="section-heading centered"><p class="eyebrow blue-eyebrow"><span></span> Toujours à vos côtés</p><h2>Au plus près de vous</h2><p>Des services et conseils pour vous accompagner au quotidien.</p></div>
         <div class="service-grid">
-          <article><span class="service-icon"><svg class="icon"><use href="#i-briefcase"/></svg></span><h3>Portail de services professionnels</h3><p>Nous avons développé des services avec nos partenaires pour vous accompagner au quotidien.</p><a class="text-link" href="https://www.allianz.fr/assurances-professionnels-entreprises/mon-activite/portail-services-professionnels.html">Découvrir les solutions <svg class="icon"><use href="#i-arrow-right"/></svg></a></article>
-          <article><span class="service-icon"><svg class="icon"><use href="#i-shield"/></svg></span><h3>Êtes-vous protégé en cas de litiges ?</h3><p>Avec la Protection Juridique Allianz, bénéficiez d’une couverture en cas de conflits professionnels.</p><a class="text-link" href="https://www.allianz.fr/assurances-professionnels-entreprises/mon-activite/assurer-mon-entreprise/protection-juridique.html">En savoir plus <svg class="icon"><use href="#i-arrow-right"/></svg></a></article>
-          <article><span class="service-icon"><svg class="icon"><use href="#i-spark"/></svg></span><h3>Protégez votre entreprise</h3><p>Prévention, réglementation : découvrez nos conseils face aux risques climatiques.</p><a class="text-link" href="https://www.allianz.fr/assurances-professionnels-entreprises/mon-activite/assurer-mes-biens/services-prevention/prevention-risques-climatiques.html">En savoir plus <svg class="icon"><use href="#i-arrow-right"/></svg></a></article>
+          <article><img src="assets/entreprise.jpg" alt="" loading="lazy"><div class="service-card-body"><h3>Portail de services professionnels</h3><p>La page source présente des services destinés à accompagner les professionnels au quotidien.</p><a class="text-link" href="pages/services.html">Découvrir les solutions <svg class="icon"><use href="#i-arrow-right"/></svg></a></div></article>
+          <article><img src="assets/droit.jpg" alt="" loading="lazy"><div class="service-card-body"><h3>Êtes-vous protégé en cas de litiges ?</h3><p>Découvrez le rôle d’une protection juridique en cas de conflit professionnel.</p><a class="text-link" href="pages/protection-juridique.html">En savoir plus <svg class="icon"><use href="#i-arrow-right"/></svg></a></div></article>
+          <article><img src="assets/sante.jpg" alt="" loading="lazy"><div class="service-card-body"><h3>Fortes chaleurs : protégez votre entreprise</h3><p>Prévention, réglementation : découvrez les sujets liés aux risques climatiques.</p><a class="text-link" href="pages/prevention-climat.html">En savoir plus <svg class="icon"><use href="#i-arrow-right"/></svg></a></div></article>
         </div>
       </div>
     </section>
 
     <section class="trade-banner">
-      <div class="wrap trade-inner"><div><p class="eyebrow light-eyebrow"><span></span> Allianz Trade</p><h2>Leader mondial de l’assurance-crédit</h2><p>Anticipez l’évolution financière de vos clients et prospects pour développer votre activité en toute sécurité.</p></div><a class="button button-white" href="https://www.allianz-trade.fr/">En savoir plus <svg class="icon"><use href="#i-arrow-right"/></svg></a></div>
+      <div class="wrap trade-inner"><div><p class="eyebrow light-eyebrow"><span></span> Allianz Trade</p><h2>Leader mondial de l’assurance-crédit</h2><p>Anticipez l’évolution financière de vos clients et prospects pour développer votre activité en toute sécurité.</p></div><a class="button button-white" href="pages/assurance-credit.html">En savoir plus <svg class="icon"><use href="#i-arrow-right"/></svg></a></div>
     </section>
 
     <section class="section faq" id="questions">
       <div class="wrap faq-layout">
-        <div class="faq-intro"><p class="eyebrow blue-eyebrow"><span></span> On vous répond</p><h2>Assurance professionnelle : vos questions, nos réponses</h2><p>Vous avez des questions sur l’assurance de votre activité ? Nous vous aidons à y voir plus clair.</p><a class="button button-outline" href="https://www.allianz.fr/tarif-professionnels">Demander un devis <svg class="icon"><use href="#i-arrow-right"/></svg></a></div>
+        <div class="faq-intro"><h2>Assurance professionnelle :<br> consultez nos questions/réponses</h2></div>
         <div class="faq-list">
-          <details><summary>Qu’est-ce qu’une assurance professionnelle ? <svg class="icon"><use href="#i-plus"/></svg></summary><div class="faq-answer"><p>Que vous soyez artisan, commerçant, profession libérale ou dirigeant d’entreprise, votre activité professionnelle vous expose quotidiennement à des risques variés.</p><p>L’assurance professionnelle vous protège contre ces aléas et vous permet d’exercer votre métier en toute sérénité. De la responsabilité civile professionnelle à l’assurance multirisque, Allianz vous accompagne pour trouver les garanties adaptées à votre secteur d’activité.</p></div></details>
-          <details><summary>C’est quoi une assurance multirisque professionnelle ? <svg class="icon"><use href="#i-plus"/></svg></summary><div class="faq-answer"><p>L’assurance pro est un contrat qui protège votre entreprise ainsi que vos biens professionnels contre de nombreux risques : incendie, dégâts des eaux, vol ou événements climatiques. Elle protège également la responsabilité civile professionnelle de l’entreprise (RC Pro).</p><a href="https://www.allianz.fr/assurances-professionnels-entreprises/mon-activite/assurer-mon-entreprise.html">En savoir plus sur la multirisque professionnelle</a></div></details>
-          <details><summary>Est-ce qu’une assurance professionnelle est obligatoire ? <svg class="icon"><use href="#i-plus"/></svg></summary><div class="faq-answer"><p>L’obligation d’assurance concerne certaines professions selon les lois et les textes qui régissent leur activité. La responsabilité civile professionnelle est notamment obligatoire pour certaines professions réglementées, comme les professionnels de santé, du droit ou du chiffre.</p><p>Les véhicules professionnels doivent également être assurés, au minimum en responsabilité civile.</p><a href="https://www.allianz.fr/assurances-professionnels-entreprises/mon-activite/assurer-mes-responsabilites.html">En savoir plus sur la responsabilité civile professionnelle</a></div></details>
-          <details><summary>Pourquoi souscrire une assurance professionnelle ? <svg class="icon"><use href="#i-plus"/></svg></summary><div class="faq-answer"><p>Même sans obligation d’assurance, un événement indésirable peut avoir des conséquences lourdes pour votre entreprise : incendie, vol, dégâts des eaux ou mise en cause de vos prestations. Une assurance adaptée contribue à protéger votre activité, le dirigeant et les salariés.</p></div></details>
-          <details><summary>Comment bien choisir son assurance professionnelle ? <svg class="icon"><use href="#i-plus"/></svg></summary><div class="faq-answer"><p>Le choix d’une assurance pro nécessite une étude détaillée de vos besoins. Prenez le temps de faire le point sur vos contrats avec un conseiller Allianz qui pourra vous proposer un devis adapté à votre activité professionnelle.</p><a href="https://www.allianz.fr/tarif-professionnels">Demander un devis</a></div></details>
-          <details><summary>Quelle assurance pour un auto-entrepreneur ? <svg class="icon"><use href="#i-plus"/></svg></summary><div class="faq-answer"><p>En tant qu’auto-entrepreneur ou micro-entrepreneur, il est fortement recommandé de souscrire une assurance responsabilité civile pour couvrir les dommages causés aux tiers au cours de l’activité, ou après une livraison de produits ou de prestations défectueuses.</p><a href="https://www.allianz.fr/assurances-professionnels-entreprises/mon-activite/assurer-mes-responsabilites/conseils-pratiques/assurance-auto-entrepreneur.html">En savoir plus</a></div></details>
-          <details><summary>Comment obtenir un devis d’assurance professionnelle en ligne ? <svg class="icon"><use href="#i-plus"/></svg></summary><div class="faq-answer"><p>Remplissez le formulaire en ligne pour être recontacté par un conseiller Allianz proche de chez vous. Vous pourrez bénéficier d’une approche globale de vos besoins par un spécialiste en assurances.</p><a href="https://www.allianz.fr/tarif-professionnels">Demander un devis sur allianz.fr</a></div></details>
-          <details><summary>Comment obtenir mon attestation RC Pro ? <svg class="icon"><use href="#i-plus"/></svg></summary><div class="faq-answer"><p>Une fois votre contrat souscrit, vous pouvez télécharger votre attestation depuis votre espace client ou contacter directement votre agence Allianz pour la recevoir par e-mail ou courrier.</p><a href="https://www.allianz.fr/assurances-professionnels-entreprises/mon-espace-client.html">Accéder à mon espace client</a></div></details>
-          <details><summary>Comment résilier un contrat d’assurance professionnelle ? <svg class="icon"><use href="#i-plus"/></svg></summary><div class="faq-answer"><p>Pour demander la résiliation de votre contrat d’assurance professionnelle Allianz, vous pouvez contacter votre conseiller qui vous accompagnera dans les démarches à suivre. Retrouvez ses coordonnées dans votre espace client ou auprès de votre agence.</p><a href="https://agences.allianz.fr/">Trouver mon agence</a></div></details>
+          <details><summary>Qu’est-ce qu’une assurance professionnelle ? <svg class="icon"><use href="#i-plus"/></svg></summary><div class="faq-answer"><p>Que vous soyez artisan, commerçant, profession libérale ou dirigeant d’entreprise, votre activité vous expose à des risques : blessure d’un client, dégât des eaux ou erreur professionnelle.</p><p>Une assurance professionnelle vise à protéger l’activité et les biens contre certains aléas. Une multirisque peut notamment couvrir, selon le contrat, l’incendie, les dégâts des eaux, le vol et la responsabilité civile professionnelle.</p><a href="pages/multirisque.html">Découvrir la multirisque professionnelle</a></div></details>
+          <details><summary>Est-ce qu’une assurance professionnelle est obligatoire ? <svg class="icon"><use href="#i-plus"/></svg></summary><div class="faq-answer"><p>Les obligations dépendent de la profession et de la situation. La responsabilité civile professionnelle est obligatoire pour certaines professions réglementées ; l’assurance décennale concerne notamment certaines activités de construction.</p><p>Les véhicules doivent être assurés au minimum en responsabilité civile. Les employeurs privés ont également des obligations concernant la complémentaire santé collective de leurs salariés. Vérifiez les règles applicables à votre situation.</p><a href="pages/rc-pro.html">En savoir plus sur la responsabilité civile professionnelle</a></div></details>
+          <details><summary>Pourquoi souscrire une assurance professionnelle ? <svg class="icon"><use href="#i-plus"/></svg></summary><div class="faq-answer"><p>Un sinistre ou une mise en cause peut avoir des conséquences sur l’activité, le dirigeant ou les salariés. Selon les besoins, les garanties peuvent concerner les responsabilités, les locaux, les biens ou les personnes.</p><a href="pages/activite.html">Explorer les besoins de mon activité</a></div></details>
+          <details><summary>Comment bien choisir son assurance professionnelle ? <svg class="icon"><use href="#i-plus"/></svg></summary><div class="faq-answer"><p>Commencez par identifier votre activité, vos obligations, vos biens, vos salariés et les risques auxquels vous êtes exposé. Les besoins d’un auto-entrepreneur peuvent être différents de ceux d’une entreprise avec des locaux et plusieurs salariés.</p><a href="pages/auto-entrepreneur.html">En savoir plus pour les auto-entrepreneurs</a></div></details>
+          <details><summary>Quelles sont les solutions d’assurance pour des véhicules professionnels ? <svg class="icon"><use href="#i-plus"/></svg></summary><div class="faq-answer"><p>Les besoins dépendent du type de véhicule, de son usage et du nombre de véhicules. Une solution peut concerner un véhicule professionnel, une flotte ou des déplacements professionnels occasionnels ; les garanties sont à examiner selon le contrat.</p><a href="pages/vehicules.html">Découvrir l’assurance des véhicules professionnels</a></div></details>
+          <details><summary>Comment obtenir un devis d’assurance professionnelle en ligne ? <svg class="icon"><use href="#i-plus"/></svg></summary><div class="faq-answer"><p>Dans cette version locale, vous pouvez parcourir une simulation de besoins. Elle ne transmet aucune demande, ne calcule aucun tarif et ne constitue pas un devis officiel.</p><a href="devis.html">Essayer la simulation locale</a></div></details>
+          <details><summary>Comment obtenir mon attestation d’assurance responsabilité civile professionnelle (RC Pro) entreprise ? <svg class="icon"><use href="#i-plus"/></svg></summary><div class="faq-answer"><p>La page source indique qu’une attestation réelle peut être obtenue auprès de l’assureur, notamment dans l’espace client ou auprès d’une agence. L’espace de démonstration local ne contient aucun contrat et ne délivre pas d’attestation.</p><a href="espace-client.html">Découvrir l’espace client de démonstration</a></div></details>
+          <details><summary>Résiliation contrat d’assurance : comment faire ? <svg class="icon"><use href="#i-plus"/></svg></summary><div class="faq-answer"><p>Pour une résiliation réelle, rapprochez-vous de votre assureur et vérifiez les conditions de votre contrat. Cette démonstration ne permet pas d’envoyer de demande.</p><a href="contact.html">Voir les informations de contact reproduites</a></div></details>
         </div>
       </div>
     </section>
 
     <section class="promo-section wrap" id="promo" aria-label="Conditions de l’offre">
-      <p><strong>* Offre soumise à conditions.</strong> Offre réservée aux clients disposant d’au moins un contrat d’assurance Allianz souscrit auprès du même intermédiaire. Jusqu’à 3 mois de cotisation offerts la première année pour toute souscription éligible du 01/09/2026 au 31/12/2026. Le nombre de mois offerts dépend du nombre de contrats déjà détenus, dans la limite de 3 mois. <a href="https://www.allianz.fr/assurance-particulier/conditions-offres-promos.html#multirisque">Voir toutes les conditions sur allianz.fr</a>.</p>
+      <p><strong>* Informations reproduites à titre indicatif, sans valeur commerciale et non mises à jour.</strong> Offre soumise à conditions et réservée aux clients disposant d’au moins un contrat d’assurance Allianz souscrit auprès du même intermédiaire. Jusqu’à 3 mois de cotisation offerts la première année pour la souscription, du 01/09/2026 au 31/12/2026, d’un nouveau contrat Allianz Actif Pro, Allianz Profil Pro, Allianz Associa Pro ou Allianz Profil Entreprise version exploitant, pour une activité éligible et avec prélèvement automatique mensuel ou annuel. Le nombre de mois offerts est équivalent au nombre de contrats déjà détenus auprès du même intermédiaire, dans la limite de 3 mois. La liste des activités éligibles est disponible auprès de l’intermédiaire.</p>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="wrap">
       <div class="footer-top"><a class="footer-brand" href="./" aria-label="Allianz, retour à l’accueil"><img src="assets/allianz-logo.svg" alt="Allianz" width="130" height="32"></a><a class="back-to-top" href="#top">Haut de page <svg class="icon"><use href="#i-arrow-up"/></svg></a></div>
+      <div class="footer-social"><strong>Suivez-nous</strong><div><a href="pages/reseaux-sociaux.html">Facebook</a><a href="pages/reseaux-sociaux.html">X</a><a href="pages/reseaux-sociaux.html">LinkedIn</a><a href="pages/reseaux-sociaux.html">YouTube</a><a href="pages/reseaux-sociaux.html">Instagram</a></div></div>
       <div class="footer-grid">
-        <div><h2>Allianz</h2><a href="https://www.allianz.fr/qui-est-allianz.html">Qui sommes-nous ?</a><a href="https://www.allianz.com/en.html">Le groupe Allianz</a><a href="https://careers.allianz.com/France?locale=fr_FR">Recrutement</a><a href="https://www.allianz.fr/allianz-banque.html">Allianz Banque</a><a href="https://www.allianz.fr/assurances-professionnels-entreprises/reclamation.html">Réclamation</a></div>
-        <div><h2>Pages les + consultées</h2><a href="https://www.allianz.fr/assurances-professionnels-entreprises/mon-activite.html">Assurance de l’activité</a><a href="https://www.allianz.fr/assurances-professionnels-entreprises/mon-activite/assurer-mes-biens.html">Assurance biens professionnels</a><a href="https://www.allianz.fr/assurances-professionnels-entreprises/mon-activite/assurer-mon-entreprise.html">Assurance multirisque professionnelle</a><a href="https://www.allianz.fr/assurances-professionnels-entreprises/mon-activite/assurer-mes-responsabilites.html">Responsabilité civile professionnelle</a></div>
-        <div><h2>Pages recommandées</h2><a href="https://www.allianz.fr/assurances-professionnels-entreprises/la-protection-de-mes-salaries/assurer-la-sante-de-mes-salaries.html">Santé collective</a><a href="https://www.allianz.fr/assurances-professionnels-entreprises/la-protection-de-mes-salaries/assurer-la-prevoyance-de-mes-salaries.html">Prévoyance collective</a><a href="https://www.allianz.fr/assurances-professionnels-entreprises/ma-protection/preparer-ma-retraite.html">Retraite dirigeant</a><a href="https://www.allianz.fr/assurances-professionnels-entreprises/lexique.html">Lexique de l’assurance pro</a></div>
-        <div><h2>Nos devis professionnels</h2><a href="https://www.allianz.fr/tarif-professionnels">Devis assurance professionnelle</a><a href="https://www.allianz.fr/tarif-professionnels?product=ACT2">Devis véhicule professionnel</a><a href="https://www.allianz.fr/tarif-professionnels?product=PS1">Devis santé des salariés</a><a href="https://www.allianz.fr/tarif-professionnels?product=ACT4">Devis responsabilité civile</a></div>
+        <div><h2>Allianz</h2><a href="pages/allianz.html">Qui sommes-nous ?</a><a href="pages/groupe.html">Le groupe Allianz</a><a href="pages/recrutement.html">Recrutement</a><a href="pages/banque.html">Allianz Banque</a><a href="pages/outre-mer.html">Allianz Outre-mer</a><a href="pages/investisseurs.html">Allianz Global Investors</a><a href="pages/immovalor.html">Allianz Immovalor</a><a href="pages/assurance-credit.html">Allianz Trade</a><a href="pages/reclamation.html">Réclamation</a><a href="pages/accessibilite.html">Solutions d’accessibilité</a></div>
+        <div><h2>Pages les + consultées</h2><a href="pages/activite.html">Assurance de l’activité</a><a href="pages/biens.html">Assurance biens professionnels</a><a href="pages/vehicules.html">Assurance véhicule professionnel</a><a href="pages/multirisque.html">Assurance multirisque professionnelle</a><a href="pages/vehicules.html">Assurance flotte automobile</a><a href="pages/rc-pro.html">Responsabilité civile professionnelle</a><a href="pages/responsabilite-environnementale.html">Responsabilité environnementale</a><a href="pages/dirigeant.html">Assurance personne clé</a><a href="pages/protection-juridique.html">Protection juridique</a></div>
+        <div><h2>Pages recommandées</h2><a href="pages/sante-collective.html">Protection de la santé</a><a href="pages/epargne-salariale.html">Épargne salariale</a><a href="pages/sante-collective.html">Santé collective</a><a href="pages/prevoyance-collective.html">Prévoyance collective</a><a href="pages/retraite-collective.html">Retraite collective</a><a href="pages/epargne-salariale.html">Plan épargne entreprise</a><a href="pages/retraite.html">Retraite dirigeant</a><a href="pages/lexique.html">Lexique de l’assurance pro</a></div>
+        <div><h2>Nos devis professionnels</h2><a href="devis.html">Devis assurance professionnelle</a><a href="devis.html?product=ACT2">Devis véhicule professionnel</a><a href="devis.html?product=PS1">Devis santé des salariés</a><a href="devis.html?product=ACT4">Devis responsabilité civile</a></div>
       </div>
-      <div class="footer-bottom"><span>Allianz © 2026</span><div><a href="https://www.allianz.fr/assurance-particulier/mentions-legales.html">Mentions légales</a><a href="https://www.allianz.fr/assurance-particulier/utilisation-des-cookies.html">Politique des cookies</a><a href="https://www.allianz.fr/assurance-particulier/accessibilite.html">Accessibilité</a></div></div>
-      <p class="local-disclaimer">Version locale non officielle, réalisée à partir du contenu public d’Allianz. Les images sont illustratives. Les devis et les services renvoient vers le site officiel.</p>
+      <div class="footer-bottom"><span>Allianz © 2026</span><div><a href="pages/mentions-legales.html">Mentions légales</a><a href="pages/cookies.html">Politique des cookies</a><a href="pages/accessibilite.html">Accessibilité</a></div></div>
+      <p class="local-disclaimer">Version locale non officielle, réalisée à partir du contenu public d’Allianz. Les images sont illustratives. Les parcours locaux sont des démonstrations, sans lien avec les services réels.</p>
     </div>
   </footer>
 </body>
