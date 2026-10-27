@@ -1,6 +1,6 @@
 # Mini-site — assurance professionnelle
 
-Reconstruction locale **non officielle et indépendante**, inspirée de la [page publique Allianz Professionnels et Entreprises](https://www.allianz.fr/assurances-professionnels-entreprises.html). Elle ne constitue pas une copie exacte : le HTML complet et les images originales n'ont pas pu être récupérés dans l'environnement de développement. Les photographies sont des illustrations générées et la police locale est Open Sans, pas la police propriétaire du site source.
+Reconstruction locale **non officielle et indépendante**, inspirée de la [page publique Allianz Professionnels et Entreprises](https://www.allianz.fr/assurances-professionnels-entreprises.html). Elle ne constitue pas une copie exacte : le HTML complet et les images originales n'ont pas pu être récupérés dans l'environnement de développement. Les bandeaux et les photos des cartes sont des illustrations générées ; quatre petits visuels proviennent des captures de référence fournies pour le projet. Les polices locales Quicksand et Open Sans remplacent la police propriétaire du site source.
 
 Les marques appartiennent à leurs titulaires. Les textes, offres, avis et coordonnées reproduits correspondent à la page consultée le **27 octobre 2026** : ils ne sont pas actualisés et n'ont aucune valeur commerciale ou contractuelle. Pour une démarche réelle, utilisez les canaux officiels de votre assureur.
 
@@ -16,7 +16,7 @@ Ouvrir **http://localhost:8000**. Sous Windows, remplacer `python3` par `python`
 
 ## Ce qui fonctionne en local
 
-- Page principale responsive : menus, accès rapides, carrousel, questions/réponses et conditions indicatives.
+- Page principale responsive : menus, barre d'accès rapides collante, carrousels, questions/réponses et conditions indicatives.
 - [Catalogue de recherche](catalogue.html) et pages thématiques sur les métiers, secteurs, responsabilités, biens, santé et services. Les liens de la page principale ouvrent des pages locales, sans appeler les sites Allianz.
 - [Simulation de besoins](devis.html) en quatre étapes, avec retour en arrière et téléchargement ou impression d'un récapitulatif. **Aucun tarif, devis officiel, contrat ou demande réelle n'est produit.** Les variantes `?product=ACT5`, `ACT2`, `PS1` et `ACT4` présélectionnent seulement un thème local.
 - [Espace client de démonstration](espace-client.html) : exemples de contrats, de documents et de démarches. Aucun compte, identifiant, mot de passe ou attestation réelle.
@@ -25,7 +25,7 @@ Ouvrir **http://localhost:8000**. Sous Windows, remplacer `python3` par `python`
 
 Les rubriques qui dépassent le périmètre (banque, recrutement, particuliers, etc.) l'indiquent explicitement. Il n'y a aucun service d'authentification, partenaire, paiement, réclamation ou souscription relié à Allianz.
 
-Les pages et les questions/réponses restent lisibles sans JavaScript ; les menus mobiles disposent d'un repli. La recherche interactive, le simulateur, les onglets de démonstration et les boutons du carrousel nécessitent JavaScript. Les listes demeurent consultables sans celui-ci.
+Les pages et les questions/réponses restent lisibles sans JavaScript ; les menus mobiles disposent d'un repli. La recherche interactive, le simulateur, les onglets de démonstration et les boutons des carrousels nécessitent JavaScript. Les listes demeurent consultables sans celui-ci.
 
 ## Confidentialité
 
@@ -60,6 +60,7 @@ Le script refuse d'écraser un dossier existant. Protections du site, ressources
 ## Ressources
 
 - Structure et contenu : page publique Allianz indiquée ci-dessus, ainsi que ses pages publiques de contact, de présentation de l'espace client et du parcours de devis.
-- Photographies : illustrations générées pour ce projet, et non photographies du site d'origine.
-- Logo Allianz : [ressource SVG publique](https://github.com/tokyrakoto-ai/Allianz/blob/main/Allianz.svg).
-- Police Open Sans : [Fontsource](https://github.com/fontsource/fontsource), licence SIL Open Font License disponible dans `assets/fonts/OPEN-SANS-LICENSE.txt`.
+- Bandeaux et photos des cartes : illustrations générées pour ce projet, et non photographies originales d'Allianz.
+- Trois photos rondes (« Expertise », « Solidité », « Innovation ») et logo eKomi : extraits des captures de référence fournies par l'utilisateur. Leurs droits appartiennent à leurs titulaires ; toute réutilisation doit respecter ces droits.
+- Logo Allianz : [ressource SVG publique](https://github.com/tokyrakoto-ai/Allianz/blob/main/Allianz.svg). Les marques Allianz et eKomi appartiennent à leurs titulaires.
+- Polices Quicksand et Open Sans : [Fontsource](https://github.com/fontsource/fontsource), licences SIL Open Font License disponibles dans `assets/fonts/QUICKSAND-LICENSE.txt` et `assets/fonts/OPEN-SANS-LICENSE.txt`.

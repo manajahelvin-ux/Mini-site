@@ -246,12 +246,18 @@
     const previous = section && section.querySelector('[data-carousel-prev]');
     const next = section && section.querySelector('[data-carousel-next]');
     if (!previous || !next || !track.firstElementChild) return;
+    const dots = section.querySelectorAll('[data-carousel-dot]');
     function refreshButtons() {
-      previous.disabled = track.scrollLeft <= 1;
-      next.disabled = track.scrollLeft + track.clientWidth >= track.scrollWidth - 1;
+      // Tracks have a small inset for focus outlines and may snap two pixels from the edge.
+      const edgeTolerance = 4;
+      previous.disabled = track.scrollLeft <= edgeTolerance;
+      next.disabled = track.scrollLeft + track.clientWidth >= track.scrollWidth - edgeTolerance;
+      const lastPage = track.scrollLeft > (track.scrollWidth - track.clientWidth) / 2;
+      dots.forEach((dot, index) => dot.classList.toggle('is-active', index === (lastPage ? dots.length - 1 : 0)));
     }
     function move(direction) {
-      const distance = track.firstElementChild.getBoundingClientRect().width + 18;
+      const gap = parseFloat(window.getComputedStyle(track).columnGap) || 0;
+      const distance = track.firstElementChild.getBoundingClientRect().width + gap;
       track.scrollBy({ left: distance * direction, behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
     }
     previous.addEventListener('click', () => move(-1));
