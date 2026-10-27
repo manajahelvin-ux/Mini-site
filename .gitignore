@@ -1,3 +1,7 @@
 # Copie téléchargée séparément et fichiers temporaires
 /original/
 /original.tmp.*/
+
+# Cache Python
+__pycache__/
+*.py[cod]
